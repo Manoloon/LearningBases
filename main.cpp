@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
-#include "Src/containers.h"
-
-
-
+#include "Src/moveSemantics.h"
 int main()
 {
-    std::vector<float> Prices={3.4,4.3,10.1,201.5,100.3};
-    containers::FindPricePeak(Prices);
+    // auto
+    auto a = 1;
+    auto b =a+2;
+    auto &&c =b;
+    int *p;
+    auto f=p;
+    std::cout << b <<" " << c <<" " << p  <<" " << f << std::endl;
+
+    Entity entity("Pablo");
     return 0;
 }
